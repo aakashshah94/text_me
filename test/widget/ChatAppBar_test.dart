@@ -9,7 +9,7 @@ void main() {
   ));
 
   testWidgets('ChatAppBar UI Test', (WidgetTester tester) async {
-    tester.pumpWidget(app);
+    await tester.pumpWidget(app);
     expect(find.text('Aakash Shah'), findsOneWidget);
     expect(find.text('@aaki94'), findsOneWidget);
     expect(find.byType(IconButton), findsNWidgets(1));

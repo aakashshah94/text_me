@@ -11,7 +11,7 @@ void main() {
   );
 
   testWidgets("Test conversationPage UI", (WidgetTester tester) async {
-    tester.pumpWidget(app);
+    await tester.pumpWidget(app);
     expect(find.byType(ChatAppBar), findsOneWidget);
     expect(find.byType(ChatListWidget), findsOneWidget);
     expect(find.byType(InputWidget), findsOneWidget);

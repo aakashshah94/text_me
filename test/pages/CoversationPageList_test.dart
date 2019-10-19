@@ -9,7 +9,7 @@ void main() {
   );
 
   testWidgets('testing ConversationPageList UI', (WidgetTester tester) async {
-    tester.pumpWidget(app);
+    await tester.pumpWidget(app);
     expect(find.byType(ConversationPage), findsOneWidget);
     expect(find.byType(PageView), findsOneWidget);
   });
