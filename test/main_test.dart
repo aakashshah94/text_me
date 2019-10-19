@@ -8,12 +8,12 @@
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:text_me/main.dart';
+import 'package:text_me/pages/ConversationPageList.dart';
 
 void main() {
-  testWidgets('Checking if hellow world shows up', (WidgetTester tester) async {
+  testWidgets('main UI test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(MyApp());
-    // Verify that our counter starts at 0.
-    expect(find.text('Hello World!'), findsOneWidget);
+    await tester.pumpWidget(TextMe());
+    expect(find.byType(ConversationPageList), findsOneWidget);
   });
 }
