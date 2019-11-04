@@ -22,4 +22,8 @@ class Palette {
   static Color otherMessageColor = Color(0xff3f3f3f);
 
   static Color greyColor = Colors.grey;
+
+  static Color accentColor = Color(0xff4fc3f7);
+
+  static Color chatBackgroundColor = Color(0xfffafafa);
 }
